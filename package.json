@@ -1,0 +1,45 @@
+{
+  "name": "react-native-dfu-update",
+  "version": "1.0.0",
+  "description": "update bluetooth device firmware with this package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "document": "documentation readme --readme-file README.md -s \"API\" -g"
+  },
+  "keywords": [
+    "react-native",
+    "dfu"
+  ],
+  "peerDependencies": {
+    "react-native": ">= 0.45.1"
+  },
+  "devDependencies": {
+    "documentation": "^4.0.0-rc.1",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
+    "prettier": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinivasdeveloper/react-native-dfu-update.git"
+  },
+  "author": "Srinivas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srinivasdeveloper/react-native-dfu-update/issues"
+  },
+  "homepage": "https://github.com/srinivasdeveloper/react-native-dfu-update#readme",
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "index.js": [
+      "npm run document",
+      "git add README.md"
+    ]
+  },
+  "types": "./index.d.ts"
+}
